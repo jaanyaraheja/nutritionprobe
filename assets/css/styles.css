@@ -63,6 +63,8 @@ main > section:nth-of-type(even) {
     width: 30%;
     background-color: var(--card); /* pastel/light bg */
     display: none;                 /* hidden by default */
+    min-width: 180px;       /* ensures enough space for text */
+    max-width: 80vw;        /* doesn’t get too wide */
     flex-direction: column;
     padding: 16px 0;
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
@@ -76,9 +78,9 @@ main > section:nth-of-type(even) {
   .site-nav a {
     color: var(--text);           /* dark/muted text for readability */
     padding: 12px 24px;
-    width: 50%;
+    width: auto;
     display: block;
-    white-space: normal;
+    white-space: nowrap;
     font-weight: 600;
   }
   .site-nav a:hover {
