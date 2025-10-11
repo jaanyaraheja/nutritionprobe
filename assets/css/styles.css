@@ -170,9 +170,13 @@ blockquote { margin: 0; font-size: 18px; }
 /* CTA + Contact Combined */
 .cta-contact { background: #f9fafb; padding: 60px 20px; }
 .cta-contact-inner { max-width: 900px; margin: 0 auto; display: flex; flex-direction: column; gap: 40px; }
+.cta-section {
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; text-align: center; min-height: 220px;}
+
 .cta-section h2 { font-size: 2rem; margin-bottom: 12px; text-align: center; }
 .cta-section p { font-size: 1.1rem; color: var(--muted); margin-bottom: 20px; text-align: center; }
-.cta-section .btn.primary { padding: 14px 28px; font-size: 1.1rem; border-radius: 12px; transition: all 0.3s; display: block; margin: 0 auto; box-shadow: 0 6px 18px rgba(0,0,0,0.1); }
+.cta-section .btn.primary {padding: 14px 28px; font-size: 1.1rem; border-radius: 12px; transition: all 0.3s; display: block; box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
 .cta-section .btn.primary:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
 
 /* Contact Section */
