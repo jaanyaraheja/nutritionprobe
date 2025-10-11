@@ -79,7 +79,6 @@ main > section:nth-of-type(even) {
     width: 50%;
     display: block;
     white-space: normal;
-    word-break: break-word; /* handle long words */
     font-weight: 600;
   }
   .site-nav a:hover {
