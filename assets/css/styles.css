@@ -78,6 +78,8 @@ main > section:nth-of-type(even) {
     padding: 12px 24px;
     width: 50%;
     display: block;
+    white-space: normal;
+    word-break: break-word; /* handle long words */
     font-weight: 600;
   }
   .site-nav a:hover {
