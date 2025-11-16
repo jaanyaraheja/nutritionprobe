@@ -25,7 +25,8 @@ body {
 
 .container { width: min(1120px, 92%); margin: 0 auto; }
 
-/* Header */main > section:nth-of-type(odd) {
+/* Header */
+main > section:nth-of-type(odd) {
   background-color: #fdf6f0; /* light pastel 1 */
 }
 
@@ -237,4 +238,11 @@ blockquote { margin: 0; font-size: 18px; }
 .skip-link:focus { left: 8px; top: 8px; width: auto; height: auto; background: #111827; color: #fff; padding: 8px 12px; border-radius: 8px; z-index: 100; }
 :focus-visible { outline: 3px solid var(--ring); outline-offset: 2px; }
 
+#why p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
 
+#why {
+  padding: 40px 0;
+}
