@@ -26,11 +26,29 @@ body {
 .container { width: min(1120px, 92%); margin: 0 auto; }
 
 .hero {
-  background: linear-gradient(135deg, #dffcf5, #ffe8d9);
-  background-size: 300% 300%;
-  animation: gradientMove 7s ease infinite;
+  position: relative;
+  background: linear-gradient(135deg, #d6fff2, #fef9e7);
+  background-size: 300% 300%;        /* needed if using animation */
+  animation: gradientMove 10s ease infinite;
   padding: 80px 0;
+  overflow: hidden;                  /* keeps watermark contained */
 }
+
+/* LOGO WATERMARK */
+.hero::after {
+  content: "";
+  position: absolute;
+  background: url("../../logonp.png") no-repeat center;
+  background-size: 350px;     /* adjust size */
+  opacity: 0.25;            /* subtle fade */
+  top: 50%;
+  right: -40px;               /* offset for aesthetic */
+  transform: translateY(-50%);
+  width: 400px;
+  height: 400px;
+  pointer-events: none;       /* prevents blocking buttons/text */
+}
+
 
 @keyframes gradientMove {
   0% { background-position: 0% 50%; }
